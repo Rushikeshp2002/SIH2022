@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100%;
+    background: linear-gradient(210deg, #08FFB8 13.4%, #5799F7 86.6%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: inline-flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    
+.form{
+    
+    display: inline-flex;
+    flex-direction: column;  
+    justify-content: center;  
+    flex-direction: row;
+    
+    
+    
+}
+
+.right{
+    display: inline-block;
+    
+
+}
+
+
+.name,.email,.password,.con-password,.blood,.gender,.product-id,.model-number,.disability{
+    margin: 1rem;
+    width: 25vw;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: larger;
+    line-height: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.image{
+    width: 20vw;
+    height: 16vh;
+    background-image: url("register.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-bottom: 3rem;
+}
+
+.register{
+    width: 27vw;
+    padding: 1rem;
+    color: white;
+    border: none;
+    border-radius: 2rem;
+    background-color: #822ADA;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.register:hover{
+    color: #822ADA;
+    background-color: white;
+    border: 2px solid #822ADA;
+
+}
+
+.valid{
+    color:rgb(208, 255, 0);
+    margin-left: 2rem;
+    font-size: larger;
+    width: 3vw;
+    font-family: 'Josefin Sans', sans-serif;
+    
+}
+
+.invalid{
+    color: rgb(255, 0, 0);
+    margin-left: 2rem;
+    font-size: larger;
+    display: inline-block;
+    width:  25vw;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+
+form i{
+    margin-left: -50px;
+    cursor: pointer;
+}
+
+.container .email{
+    display: block;
+    
+}
+
+
+
+@media (max-width:1300px){
+    .image{
+        display: inline-block;
+        width: 12rem;
+        margin: auto;
+        
+        
+    }
+    .body{
+        height: 100%;
+        overflow-y: scroll;
+    }
+    .container{
+        height: 100vh;
+    }
+    .name,.email,.password,.con-password,.blood,.gender,.product-id,.model-number,.disability{
+        width: 80vw;
+        margin: 0.5rem;
+        font-size: medium;
+    }
+
+    .form{
+        height: 100vh;
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        line-height: 1rem;
+    }
+
+    .register{
+        width: 90vw;
+        font-size: 1.5rem;
+        padding: 0.7rem;
+    }
+
+}

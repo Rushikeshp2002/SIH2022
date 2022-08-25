@@ -9,7 +9,8 @@
     background: linear-gradient(210deg, #08FFB8 13.4%, #5799F7 86.6%);
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: scroll;
     padding-top: 2rem;
     padding-bottom: 2rem;
     
@@ -37,11 +38,14 @@
     flex-direction: row; 
 }
 
+.left{
+    display: inline-block;
+    
+    flex-direction: row;
+    
+}
 .right{
-    
-    display: inline-flex;
-    flex-direction: column;
-    
+    width: 20rem;
 }
 
 
@@ -119,6 +123,36 @@ form i{
     
 }
 
+#que{
+    width: 26.3vw;
+    margin: auto;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: gray;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+
+    font-size: 1.3vw;
+    margin-left: 1.1rem;
+    margin-top: 0.5rem;
+}
+
+.answer{
+    width: 25vw;
+    margin: auto;
+    padding: 0.6rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    color: gray;
+    border: none;
+    font-family: 'Josefin Sans', sans-serif;
+    
+    font-size: 1.3vw;
+    margin-left: 1.1rem;
+    margin-top: 1rem;
+}
+
 
 
 @media (max-width:1300px){
@@ -126,7 +160,7 @@ form i{
         height: 100vh;
         padding-bottom: 3rem;
         overflow-y: scroll;
-        padding-top: 6rem ;
+        padding-top: 7rem ;
     }
     .image{
         position: absolute;
@@ -150,6 +184,8 @@ form i{
         width: 80vw;
         margin: 1rem;
         font-size: medium;
+        background-color: #fff;
+        z-index: 9999999;
     }
 
     .form{

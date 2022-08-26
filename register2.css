@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(210deg, #08FFB8 13.4%, #5799F7 86.6%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.h1{
+    font-size: 4vw;
+    font-family: 'Josefin Sans', sans-serif;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.answer{
+    margin-top: 1rem;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.product, .model , .disability , .name , .Phoneno ,.answer{
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border: none;
+    width: 23vw;
+    border-radius: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.3vw;
+}
+
+.select{
+    width: 25vw;
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: white;
+}
+
+.register{
+    width: 25vw;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-size: 1.4vw;
+    border: none;
+    color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #822ADA;
+    text-align: center;
+}
+
+@media (max-width:1200px){
+    .container{
+        width: 100vw;
+        height: 100vh;
+        margin-left: 0.1rem;
+        
+    }
+    .h1{
+        font-size: 10vw;
+    }
+    .product, .model , .disability , .name , .Phoneno ,.answer{
+        width: 80vw;
+        padding: 1.1rem;
+        font-size: 1.1rem;
+        background-color: white;
+    }
+    .select{
+        width: 90vw;
+        background-color: white;
+    }
+    .register{
+        width: 88.8vw;
+        padding: 0.9rem;
+        font-size: 7vw;
+    }
+
+}

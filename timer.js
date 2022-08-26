@@ -4,6 +4,8 @@ const el = document.querySelector(".clock");
 const mindiv = document.querySelector(".mins");
 const secdiv = document.querySelector(".secs");
 
+
+
 const startBtn = document.querySelector(".start");
 localStorage.setItem("btn", "focus");
 
@@ -25,6 +27,7 @@ window.addEventListener('load', (event) => {
   setTimeout(decremenT(), 31);
   startBtn.style.transform = "scale(0)";
   paused = false;
+  
 });
 
   
